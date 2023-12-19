@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoPOO", "ProjetoPOO.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PojetoPOO.Classes", "..\PojetoPOO.Classes\PojetoPOO.Classes.csproj", "{01D80086-BDE9-49E6-A688-6E9F249A81F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoPOO.Exceptions", "..\ProjetoPOO.Exceptions\ProjetoPOO.Exceptions.csproj", "{1B18B57F-E24D-4C48-B862-C8A97A5893C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{01D80086-BDE9-49E6-A688-6E9F249A81F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D80086-BDE9-49E6-A688-6E9F249A81F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D80086-BDE9-49E6-A688-6E9F249A81F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B18B57F-E24D-4C48-B862-C8A97A5893C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B18B57F-E24D-4C48-B862-C8A97A5893C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B18B57F-E24D-4C48-B862-C8A97A5893C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B18B57F-E24D-4C48-B862-C8A97A5893C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,8 +21,9 @@ namespace ProjetoPOO.Classes
     public class Patients
     {
         #region ATTRIBUTES
+        const int MAXPATIENTS = 2000;
         public ArrayList patients;
-
+        static int totPatients;
         #endregion
 
         #region METHODS
@@ -33,7 +34,9 @@ namespace ProjetoPOO.Classes
         /// </summary>
         public Patients()
         {
+            totPatients++;
             patients = new ArrayList();
+            //inicializa array patients
         }
         #endregion
 
@@ -44,6 +47,18 @@ namespace ProjetoPOO.Classes
         #endregion
 
         #region OTHERMETHODS
+
+        public void ShowPatients()
+        {
+            foreach(Patient patient in patients)
+            {
+                if(patient.firstName.Length > 0)
+                {
+                    Console.WriteLine("Name " + patient.firstName + patient.lastName, "| Email: " + patient.email, "| Phone Number: " + patient.phoneNumber, "| Assigned Medic: " + patient.AssignedMedic);
+                }
+            }
+        }
+
 
         public bool SavePatients(string fName)
         {

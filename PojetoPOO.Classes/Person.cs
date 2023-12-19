@@ -24,13 +24,13 @@ namespace ProjetoPOO.Classes
 
         #region ATTRIBUTES
 
-        private string firstName;
-        private string lastName;
-        private string email;
-        private int phoneNumber;
-        DateTime dob;
-        private int nif;
-        private string address;
+        public string firstName;
+        public string lastName;
+        public string email;
+        public int phoneNumber;
+        public DateTime dob;
+        public int nif;
+        public string address;
 
         #endregion
 
@@ -46,6 +46,17 @@ namespace ProjetoPOO.Classes
         /// <param name="phoneNumber"></param>
         /// <param name="dob"></param>
         /// <param name="nif"></param>
+
+        public Person()
+        {
+            firstName = "";
+            lastName = "";
+            email = "";
+            phoneNumber = 0;
+            nif = 0;
+            address = "";
+        }
+
         public Person(string firstname, string lastName, string email, int phoneNumber, DateTime dob, int nif, string address)
         {
             this.firstName = firstname;

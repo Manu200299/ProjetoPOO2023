@@ -18,12 +18,12 @@ namespace ProjetoPOO.Classes
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Medic : Staff, IRegister, IService
+    public class Medic : Staff
     {
         #region ATTRIBUTES
 
-        private int medicId;
-        private MedicSpecialty medicSpecialty;
+        public int medicId;
+        public MedicSpecialty medicSpecialty;
 
         public enum MedicSpecialty
         {
@@ -72,6 +72,9 @@ namespace ProjetoPOO.Classes
         #endregion
 
         #region OTHERMETHODS
+
+
+
         #endregion
 
         #region DESTRUCTOR

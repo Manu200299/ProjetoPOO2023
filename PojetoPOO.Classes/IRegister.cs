@@ -17,26 +17,11 @@ namespace ProjetoPOO.Classes
 
         #region METHODS
 
-        void RegisterInformation()
-        {
-
-        }
-        void UnregisterInformation()
-        {
-
-        }
-        void ScheduleAppointment()
-        {
-
-        }
-        void CancelAppointment()
-        {
-
-        }
-        void ShowAppointmentResults()
-        {
-
-        }
+        void RegisterInformation();
+        void UnregisterInformation();
+        void ScheduleAppointment();
+        void CancelAppointment();
+        void ShowAppointmentResults();
         #endregion
     }
 }

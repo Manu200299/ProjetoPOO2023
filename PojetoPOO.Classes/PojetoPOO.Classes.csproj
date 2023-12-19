@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="ProjetoPOO.Exceptions">
+      <HintPath>..\ProjetoPOO.Exceptions\bin\Debug\net6.0\ProjetoPOO.Exceptions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

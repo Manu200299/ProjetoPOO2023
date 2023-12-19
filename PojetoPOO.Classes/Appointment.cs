@@ -97,6 +97,33 @@ namespace ProjetoPOO.Classes
         #endregion
 
         #region OTHERMETHODS
+
+        void IRegister.RegisterInformation()
+        {
+
+        }
+
+        void IRegister.UnregisterInformation()
+        {
+
+        }
+
+        void IRegister.ScheduleAppointment()
+        {
+
+        }
+
+        void IRegister.CancelAppointment()
+        {
+
+        }
+
+        void IRegister.ShowAppointmentResults()
+        {
+
+        }
+
+
         #endregion
 
         #region DESTRUCTOR

@@ -9,19 +9,13 @@ namespace ProjetoPOO.Classes
     public interface IService
     {
         /// <summary>
-        /// Interface para os medicos e pacientes(Solicitar consulta, Prescrever medicamentos, etc..)
+        /// Interface para os pacientes(Solicitar consulta, Solicitar reagendamento etc..)
         /// </summary>
 
         #region METHODS
 
-        void RequestAppointment()
-        {
-
-        }
-        void PrescribeDrugs()
-        {
-
-        }
+        void RequestAppointment();
+        void RequestRescheduleAppointment();
 
         #endregion
     }
