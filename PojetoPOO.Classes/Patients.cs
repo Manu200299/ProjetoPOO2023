@@ -22,7 +22,7 @@ namespace ProjetoPOO.Classes
     {
         #region ATTRIBUTES
         const int MAXPATIENTS = 2000;
-        public ArrayList patients;
+        public ArrayList patients; //arrayList pacientes
         static int totPatients;
         #endregion
 
@@ -34,7 +34,7 @@ namespace ProjetoPOO.Classes
         /// </summary>
         public Patients()
         {
-            totPatients++;
+            totPatients=0;
             patients = new ArrayList();
             //inicializa array patients
         }
@@ -59,23 +59,58 @@ namespace ProjetoPOO.Classes
             }
         }
 
-
+        /// <summary>
+        /// Metodo para guardar os pacientes na arraylist com BinaryFormatter
+        /// </summary>
+        /// <param name="fName"></param>
+        /// <returns></returns>
         public bool SavePatients(string fName)
         {
-            Stream s = File.Open(fName, FileMode.Create);
-            BinaryFormatter bf = new BinaryFormatter();
-            bf.Serialize(s, patients);
-            s.Close();
-            return true;
+            try
+            {
+                Stream s = File.Open(fName, FileMode.Create);
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.Serialize(s, patients);
+                s.Close();
+                return true;
+            }
+            catch (IOException e) //exception dos IO's
+            {
+                throw e;
+            }
+            return false;
+        }
+        /// <summary>
+        /// Metodo para limpar a arraylist patients
+        /// </summary>
+        public void ClearPatients()
+        {
+            patients.Clear();
         }
 
+        /// <summary>
+        /// Metodo para carregar o ficheiro dos pacientes na arraylist com BinaryFormatter
+        /// </summary>
+        /// <param name="fName"></param>
+        /// <returns></returns>
         public bool LoadPatients(string fName)
         {
-            Stream s = File.Open(fName, FileMode.Open);
-            BinaryFormatter bf = new BinaryFormatter();
-            patients = (ArrayList)bf.Deserialize(s);
-            s.Close();
-            return true;
+            if( File.Exists(fName))
+            {
+                try
+                {
+                    Stream s = File.Open(fName, FileMode.Open);
+                    BinaryFormatter bf = new BinaryFormatter();
+                    patients = (ArrayList)bf.Deserialize(s);
+                    s.Close();
+                    return true;
+                }
+                catch(IOException e) //exception dos IO's
+                {
+                    throw e;
+                }
+            }
+            return false;
         }
 
         #endregion

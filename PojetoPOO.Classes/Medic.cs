@@ -18,6 +18,8 @@ namespace ProjetoPOO.Classes
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
+
+    [Serializable]
     public class Medic : Staff
     {
         #region ATTRIBUTES
